@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Web Page</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+      :root {
+        --bg-color: #021526; /* Dark purple */
+        --header-footer-bg: #021526; /* Purple shade */
+        --main-bg: #2d3b96; /* Lighter purple */
+        --text-color: #f1ecf4; /* Soft lavender */
+        --link-color: #c8acd6; /* Link color */
+        --icon-color: #c8acd6; /* Icon color */
+        --hover-icon-color: #0d2f5f; /* Hover icon color */
+      }
+
+      body {
+        font-family: "Montserrat", sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+      header,
+      footer {
+        background-color: var(--header-footer-bg);
+        color: var(--text-color);
+        padding: 15px;
+      }
+      main {
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--main-bg);
+        color: var(--text-color);
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .footer-left,
+      .footer-right {
+        text-align: left;
+      }
+      .footer-left p,
+      .footer-right p {
+        margin: 5px 0;
+      }
+      .footer-left a,
+      .footer-right a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+      .footer-icons a {
+        margin-right: 10px;
+        color: var(--icon-color);
+        font-size: 20px;
+        text-decoration: none;
+      }
+      .footer-icons a:hover {
+        filter: drop-shadow(0px 0px 4px #afafaf);
+        /* color: var(--hover-icon-color); */
+      }
+      .github-link {
+        color: #dbcbbd;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Simple Web Page</h1>
+    </header>
+    <main>
+      <h2>
+        This is the basic Website page, developed by
+        <a class="github-link" href="https://github.com/Vaibhav-Samdani"
+          >@vaibhav-samdani</a
+        >
+      </h2>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-left">
+          <p><strong>Vaibhav Samdani</strong></p>
+          <p>Jaipur, India</p>
+          <p>
+            <a href="mailto:vaibhavmaheshwari517@gmail.com"
+              >vaibhavmaheshwari517@gmail.com</a
+            >
+          </p>
+          <p><a href="tel:+919079245896">+91 9079245896</a></p>
+        </div>
+        <div class="footer-right">
+          <p><strong>About Me</strong></p>
+          <p>Web Developer | Engineer | Learner</p>
+          <p><a href="https://vaibhav-samdani.github.io/">Portfolio</a></p>
+          <div class="footer-icons">
+            <a href="https://github.com/vaibhav-samdani">🔗GitHub</a>
+            <a href="https://www.linkedin.com/in/vaibhav-samdani/"
+              >🔗LinkedIn</a
+            >
+            <a href="https://x.com/samdanivaibhav_">🔗Twitter</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
